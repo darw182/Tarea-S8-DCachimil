@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <header class="py-5">
+        <h1 class="text-center">Tienda de <span class="text-primary">Electronicos</span></h1>
+    </header>
+
+    <div class="border-top py-4">
+        <div class="navbar navbar-expand-lg container-xl navbar-light">
+            <a class="navbar-brand nombre-sitio d-lg-none fs-2 fw-bold text-uppercase" href="index.html">Tienda de Electronicos</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegacion">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navegacion" class="collapse navbar-collapse">
+                <nav class="navbar-nav container-xl text-center d-flex flex-md-row justify-content-md-between">
+                    <a class="text-dark text-decoration-none" href="#">Inicio</a>
+                    <a class="text-dark text-decoration-none" href="#">Productos</a>
+                    <a class="text-dark text-decoration-none" href="#">Ofertas</a>
+                    <a class="text-dark text-decoration-none" href="#">Nosotros</a>
+                    <a class="text-dark text-decoration-none" href="#">Contacto</a>
+                    <a class="text-dark text-decoration-none" data-bs-toggle="modal" data-bs-target="#modal" href="#">Iniciar Sesion</a>
+
+                    <!-- Modal -->
+             <div id="modal" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 >Nuevo Cliente</h2>
+                            <button data-bs-dismiss="modal" type="button" class="btn-close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="#">
+                                <legend class="fs-2 text-start"><i class="bi bi-person-fill-add"></i> Nuevo Cliente</legend>
+        
+                                <div class="mb-3 text-start">
+                                    <label for="nombre" class="form-label">Nombre</label>
+                                    <input type="text" name="" id="nombre" class="form-control">
+                                </div>
+        
+                                <div class="mb-3 text-start">
+                                    <label for="empresa" class="form-label">Empresa</label>
+                                    <input type="text" name="" id="empresa" class="form-control">
+                                </div>
+        
+                                <div class="mb-3 text-start">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" name="" id="email" class="form-control">
+                                </div>
+        
+                                
+                            </form>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary  py-3">Registrar Cliente
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </button>
+
+                            <button data-bs-dismiss="modal" type="button" class="btn btn-danger py-3">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+             </div>
+                </nav>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container-xl">
+        <div id="indicadores" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button class="active" type="button" data-bs-target="#indicadores" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#indicadores" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#indicadores" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#indicadores" data-bs-slide-to="3"></button>
+
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/elec1.jpg" alt="slide 1" class="d-block w-100">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/elec2.jpg" alt="slide 1" class="d-block w-100">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/elec3.jpg" alt="slide 1" class="d-block w-100">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/elec4.png" alt="slide 1" class="d-block w-100">
+                </div>
+
+                <button type="button" class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#indicadores">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+
+                <button type="button" class="carousel-control-next" data-bs-slide="next" data-bs-target="#indicadores">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+
+        <main class="container-xl py-5">
+            <h2 class="text-center my-5">Nuestros Productos</h2>
+
+            <div class="row g-0 pt-5 mb-4">
+                <div class="col-md-8 producto">
+                    <img src="img/producto1.jpg" alt="imagen producto" class="img-fluid">
+                </div>
+                <div class="col-md-4 bg-primary text-center p-5 text-white d-flex flex-column justify-content-center">
+                    <h3>Producto 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cum, fugit dicta necessitatibus rerum quo aliquam eum eligendi iste blanditiis aperiam qui voluptatibus </p>
+
+                    <p class="fs-1 fw-bold">$500.00</p>
+                    <a class="btn btn-success fs-3 fw-bold text-uppercase py-3" href="#">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="img/producto2.jpg" alt="imagen producto" class="img-fluid">
+
+                        <div class="card-body text-center bg-primary text-white p-5">
+                            <h3>Producto 2</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cum, fugit dicta necessitatibus rerum quo aliquam eum eligendi iste blanditiis aperiam qui voluptatibus </p>
+
+                            <p class="fs-1 fw-bold">$200.00</p>
+                            <a class="btn btn-success fs-3 fw-bold text-uppercase py-3 d-block" href="#">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="img/producto3.jpg" alt="imagen producto" class="img-fluid">
+
+                        <div class="card-body text-center bg-primary text-white p-5">
+                            <h3>Producto 3</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cum, fugit dicta necessitatibus rerum quo aliquam eum eligendi iste blanditiis aperiam qui voluptatibus </p>
+
+                            <p class="fs-1 fw-bold">$200.00</p>
+                            <a class="btn btn-success fs-3 fw-bold text-uppercase py-3 d-block" href="#">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="img/producto4.jpg" alt="imagen producto" class="img-fluid">
+
+                        <div class="card-body text-center bg-primary text-white p-5">
+                            <h3>Producto 4</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cum, fugit dicta necessitatibus rerum quo aliquam eum eligendi iste blanditiis aperiam qui voluptatibus </p>
+
+                            <p class="fs-1 fw-bold">$200.00</p>
+                            <a class="btn btn-success fs-3 fw-bold text-uppercase py-3 d-block" href="#">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="img/producto5.jpg" alt="imagen producto" class="img-fluid">
+
+                        <div class="card-body text-center bg-primary text-white p-5">
+                            <h3>Producto 5</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cum, fugit dicta necessitatibus rerum quo aliquam eum eligendi iste blanditiis aperiam qui voluptatibus </p>
+
+                            <p class="fs-1 fw-bold">$200.00</p>
+                            <a class="btn btn-success fs-3 fw-bold text-uppercase py-3 d-block" href="#">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="img/producto6.jpg" alt="imagen producto" class="img-fluid">
+
+                        <div class="card-body text-center bg-primary text-white p-5">
+                            <h3>Producto 6</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cum, fugit dicta necessitatibus rerum quo aliquam eum eligendi iste blanditiis aperiam qui voluptatibus </p>
+
+                            <p class="fs-1 fw-bold">$200.00</p>
+                            <a class="btn btn-success fs-3 fw-bold text-uppercase py-3 d-block" href="#">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <section class="container-xl">
+            <h2 class="text-center py-5">Categorias de Productos</h2>
+
+            <div class="row mt-5">
+                <div class="col-md-4 categoria">
+                    <div class="overflow-hidden">
+                        <img class="img-fluid" src="img/categoria1.jpg" alt="imagen categoria">
+                    </div>
+                    <a href="#" class="text-dark fs-2 text-decoration-none d-block text-center py-3">Oficina</a>
+                </div>
+
+                <div class="col-md-4 categoria">
+                    <div class="overflow-hidden">
+                        <img class="img-fluid" src="img/categoria2.jpg" alt="imagen categoria">
+                    </div>
+                    <a href="#" class="text-dark fs-2 text-decoration-none d-block text-center py-3">Hogar</a>
+                </div>
+
+                <div class="col-md-4 categoria">
+                    <div class="overflow-hidden">
+                        <img class="img-fluid" src="img/categoria3.jpg" alt="imagen categoria">
+                    </div>
+                    <a href="#" class="text-dark fs-2 text-decoration-none d-block text-center py-3">Cocina</a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="mt-5 pt-5 border-top">
+            <div class="container-xl mt-5">
+                <div class="row">
+                    <div class="col-md-4 text-center mb-4 mb-md-0">
+                        <h3 class="mb-4">Categorias</h3>
+                        <nav class="d-flex flex-column">
+                            <a class="text-dark text-decoration-none" href="#">Cocina</a>
+                            <a class="text-dark text-decoration-none" href="#">Jardin</a>
+                            <a class="text-dark text-decoration-none" href="#">Cochera</a>
+                            <a class="text-dark text-decoration-none" href="#">oficina</a>
+                            <a class="text-dark text-decoration-none" href="#">Dormitorios</a>
+                        </nav>
+                    </div>
+
+                    <div class="col-md-4 text-center mb-4 mb-md-0">
+                        <h3 class="mb-4">Sobre Nosotros</h3>
+                        <nav class="d-flex flex-column">
+                            <a class="text-dark text-decoration-none" href="#">Nuestra Historia</a>
+                            <a class="text-dark text-decoration-none" href="#">Mision,Vision y Valores</a>
+                            <a class="text-dark text-decoration-none" href="#">Carreras</a>
+                            <a class="text-dark text-decoration-none" href="#">Politicas de Privacidad</a>
+                            <a class="text-dark text-decoration-none" href="#">Terminos del Servicio</a>
+                        </nav>
+                    </div>
+
+                    <div class="col-md-4 text-center mb-4 mb-md-0">
+                        <h3 class="mb-4">Soporte</h3>
+                        <nav class="d-flex flex-column">
+                            <a class="text-dark text-decoration-none" href="#">Preguntas Frecuentes</a>
+                            <a class="text-dark text-decoration-none" href="#">Ayuda en Linea</a>
+                            <a class="text-dark text-decoration-none" href="#">Confianza y Seguridad</a>
+                        </nav>
+                    </div>
+                </div>
+
+                <p class="mt-5 text-center fs-2">Todos los derechos Reservados. Darwin Cachimil</p>
+            </div>
+        </footer>
+
+    </div>
+
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
